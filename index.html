@@ -124,7 +124,7 @@ physics: { stabilization: false }
 }; 
 const network = new vis.Network(container, data, options);
 network.on("dragEnd", function (params) {
-params.nodes.forEach(nodeID => {
+params.nodes.forEach(nodeId => {
 const position = network.getPosition([nodeId])[nodeId];
 nodes.update({
 id: nodeId,
