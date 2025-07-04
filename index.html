@@ -120,7 +120,7 @@ const options = {
 nodes: { shape: "dot", size: 25, font: { size: 20 } },  
 edges: { arrows: "to", font: { align: "middle" } },  
 interaction: { hover: true, tooltipDelay: 200, dragNodes: true },  
-physics: { stabilization: false }  
+physics: { stabilization: true }  
 }; 
 const network = new vis.Network(container, data, options);
 network.on("dragEnd", function (params) {
